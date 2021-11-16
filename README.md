@@ -1,4 +1,4 @@
-# AirPressure
+# AirPump failures
 
 Your customer is manufacturing devices containing air pumps. Each machine consists of 4 air pumps. Ideally, the air pressure rises sharply and remains stable throughout the machine's cycle, where it drops sharply. However, it can happen that the air pressure drops due to pump failure, or the air pressure rises or drops slowly. The aim of the project is to detect such behavior for the customer.
 
