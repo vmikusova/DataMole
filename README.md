@@ -15,7 +15,7 @@ The data consists of the following columns (in this particular order):
 
 - MachineId - Id of the machine
 - MeasurementId - Id of the measured cycle
-- Pressure - Air pressure (Pascals)
+- Pressure - Air pressure (kPa)
 
 The data does not consist timestamps as they are not relevant.
 
