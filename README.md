@@ -1,6 +1,9 @@
 # AirPump failures
 
-Your customer is manufacturing devices containing air pumps. Each machine consists of 4 air pumps. Ideally, the air pressure rises sharply and remains stable throughout the machine's cycle, where it drops sharply. However, it can happen that the air pressure drops due to pump failure, or the air pressure rises or drops slowly. The aim of the project is to detect such behavior for the customer.
+A customer is manufacturing devices containing air pumps that provide pressure for a machine cycle. Ideally, the air pressure rises sharply and remains stable throughout the machine's cycle, where it drops sharply. However, it can happen that the air pressure drops due to pump failure, or the air pressure rises or drops slowly.
+
+The goal of the project is to detect a pump failure.
+The typical air pump failure is a temporary pressure decrease in the first half of the cycle.
 
 
 ## Data structure
@@ -10,12 +13,9 @@ Your customer is manufacturing devices containing air pumps. Each machine consis
 
 The data consists of the following columns (in this particular order):
 
-- SiteId - Id of location where the machine is located
-- DeviceId - Id of the machine
-- MeasurementId - Id of the individual measurement
-- PumpId - Id of the pump (0 - 3)
+- MachineId - Id of the machine
+- MeasurementId - Id of the measured cycle
 - Pressure - Air pressure (Pascals)
-- PumpActive - Information whether the pump was active
 
 The data does not consist timestamps as they are not relevant.
 
@@ -23,10 +23,8 @@ The data does not consist timestamps as they are not relevant.
 
 The labels consists of the following columns (in this particular order):
 
-- SiteId - Id of location where the machine is located
-- DeviceId - Id of the machine
-- MeasurementId - Id of the individual measurement
-- PumpId - Id of the pump (0 - 3)
+- MachineId - Id of the machine
+- MeasurementId - Id of the measured cycle
 - PumpFailed - True if pump failed
 - SlowStart - True if the preasure rised slowly
 - SlowEnd - True if the presure dropped slowly
@@ -34,8 +32,6 @@ The labels consists of the following columns (in this particular order):
 
 ## Your task:
 
-
-- Perform an exploratory analysis of the data.
 - Develop a predictive model for the PumpFailed column and report its accuracy in appropriate metrics.
 - Explain your model.
 
@@ -43,7 +39,6 @@ The labels consists of the following columns (in this particular order):
 ## Notes
 
 - We suggest you to use Python and Jupyter notebook for this assignment.
-- If you have some time remaining you can build predictive models for the rest of label columns.
 
 
 ## Requirements
