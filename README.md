@@ -17,7 +17,7 @@ The data consists of the following columns (in this particular order):
 - MeasurementId - Id of the measured cycle
 - Pressure - Air pressure (kPa)
 
-The data does not consist timestamps as they are not relevant.
+The data does not contain timestamps, but for each machine and measured cycle combination, observations (i.e. rows) of the pressure values are ordered by time, and the time intervals between individual observations are always the same.
 
 ### Labels
 
