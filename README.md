@@ -32,7 +32,7 @@ The labels consists of the following columns (in this particular order):
 
 ## Your task:
 
-- Develop a predictive model for the PumpFailed column and report its accuracy in appropriate metrics.
+- Develop a predictive model for the PumpFailed column and report its performance in appropriate metrics.
 - Explain your model.
 
 
