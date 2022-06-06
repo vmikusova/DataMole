@@ -26,8 +26,8 @@ The labels consists of the following columns (in this particular order):
 - MachineId - Id of the machine
 - MeasurementId - Id of the measured cycle
 - PumpFailed - True if pump failed
-- SlowStart - True if the preasure rised slowly
-- SlowEnd - True if the presure dropped slowly
+- SlowStart - True if the pressure rised slowly
+- SlowEnd - True if the pressure dropped slowly
 
 
 ## Your task:
