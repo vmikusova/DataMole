@@ -1,0 +1,5 @@
+virtualenv-datamole/*
+*.csv
+*.parquet
+*:Zone.Identifier
+*.zip
