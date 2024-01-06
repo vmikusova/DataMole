@@ -1,3 +1,10 @@
+# Quickstart guide:
+1. I was using `virtualenv` to handle packages
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
 # AirPump failures
 
 A customer is manufacturing devices containing air pumps that provide pressure for a machine cycle. Ideally, the air pressure rises sharply and remains stable throughout the machine's cycle, where it drops sharply. However, it can happen that the air pressure drops due to pump failure, or the air pressure rises or drops slowly.
